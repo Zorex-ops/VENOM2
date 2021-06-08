@@ -1,0 +1,145 @@
+
+/*обнуление значений размеров всех тегов*/
+*{	padding: 0;	border: 0;	margin: 0;}
+/*замена подсчета ширины блока*/
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing: border-box;}
+/*удаление линии обводки у некоторых юраузеров*/
+:focus,:active{outline: none;}
+a:focus, a:active{overflow: none;}
+/*делаем html5 теги блочными*/
+nav, footer, header, aside{display: block;}
+/*уравнивающие параметрышрифтов и элементов тегов html body для разных браузеров*/
+html,body {	height: 100%;	width: 100%;	font-size: 100%;	line-height: 1;	font-size: 14px;	-ms-text-size-adjust:100%;	-moz-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;}
+/*установка наследования шрифта для тегов form*/
+input, button, textarea {font-family: inherit;}
+/*изменения для разных браузеров тегов*/
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover{text-decoration: none;}
+ul,li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+
+/*подключаем шрифты*/
+@import url('');
+
+/*подключаем шрифты*/
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #14131A;
+	color: #fff;
+	background-image: url(../img/image2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+
+/*HEADER*/
+
+.header{
+	width: 100%;
+	height: 71px;
+
+	/*position: absolute;*/
+	top: 40px;
+	left: 0;
+	z-index: 1000;
+	margin-bottom: 80px;
+}
+
+.header__inner{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.header__logo{
+margin-right: 50px;
+}
+
+
+.nav{
+
+}
+
+.nav__link{
+	color: rgba(255, 255, 255, 0.5);
+	margin-right: 30px;
+	opacity: 0.7;
+	transition: opacity .2s linear;
+	
+}
+
+.nav__link:last-child {
+	margin-right: 0;
+}
+
+.nav__link:hover{
+	opacity: 1;
+}
+
+
+/*INTRO*/
+
+
+.intro{
+	
+}
+
+
+.intro__inner_date{
+margin-bottom: 40px;
+}
+
+.intro__inner_date span{
+	display: block;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 24px;
+}
+
+.intro__inner_img{
+	margin-bottom: 40px;
+}
+
+.intro__inner_text p{
+	font-size: 16px;
+	line-height: 1.4;
+	color: rgba(255, 255, 255, 0.8);
+	s
+}
+
+.intro__inner_text{
+	margin-bottom: 70px;
+	max-width: 423px;
+}
+
+
+.btn{
+	display: inline-block;
+	vertical-align: top;
+	padding: 15px 30px;
+	border-radius: 5px;
+}
+
+.btn-vector img{
+	padding-right: 10px;
+}
+.btn-text{
+	color: #8d0019;
+}

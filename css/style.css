@@ -39,7 +39,7 @@ body{
 }
 
 .red{
-	background:  url(/img/krov.png) no-repeat top right, url(/img/background.jpg)no-repeat center center /100%,  #14131A;
+	background:  url(../img/krov.png) no-repeat top right, url(../img/background.jpg) no-repeat center center /100%,  #14131A;
 	
 
 }
@@ -207,22 +207,6 @@ margin-bottom: 40px;
 	
 }
 
-
-
-/* .picture__venom {
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 2;
-
-}
-
-.picture__line {
-position: absolute;
-top: 0;
-right: 0;
-
-} */
 
 
 

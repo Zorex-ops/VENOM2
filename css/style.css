@@ -1,212 +1,373 @@
-
 /*обнуление значений размеров всех тегов*/
-*{	padding: 0;	border: 0;	margin: 0;}
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+
 /*замена подсчета ширины блока*/
-*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing: border-box;}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
 /*удаление линии обводки у некоторых юраузеров*/
-:focus,:active{outline: none;}
-a:focus, a:active{overflow: none;}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    overflow: none;
+}
+
+
 /*делаем html5 теги блочными*/
-nav, footer, header, aside{display: block;}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+
 /*уравнивающие параметрышрифтов и элементов тегов html body для разных браузеров*/
-html,body {	height: 100%;	width: 100%;	font-size: 100%;	line-height: 1;	font-size: 14px;	-ms-text-size-adjust:100%;	-moz-text-size-adjust:100%;
-	-webkit-text-size-adjust:100%;}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
 /*установка наследования шрифта для тегов form*/
-input, button, textarea {font-family: inherit;}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+
 /*изменения для разных браузеров тегов*/
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding: 0;border: 0;}
-a, a:visited {text-decoration: none;}
-a:hover{text-decoration: none;}
-ul,li{list-style: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
 
 
 /*подключаем шрифты*/
+
 @import url('');
 
 /*подключаем шрифты*/
 
-body{
-	font-family: 'Roboto', sans-serif;
-	
-	color: #fff;
-	
-
-	
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
 }
 
-.red{
-	background:  url(../img/krov.png) no-repeat top right, url(../img/background.jpg) no-repeat center center /100%,  #14131A;
-	
-
+.red {
+    background: url(../img/krov.png) no-repeat top right/70%, url(../img/background.jpg) no-repeat center center /100%, #14131A;
 }
 
-.picture__venom{
-	position: absolute;
-	top: 0;
-	right: 0;
-	max-width: 100%;
-	height: auto;
+.picture__venom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 626px;
+    width: 50%;
 }
 
-
-.container{
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 15px;
-	position: relative;
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /*HEADER*/
 
-.header{
-	width: 100%;
-	height: 70px;
-
-	
-	top: 40px;
-	left: 0;
-	z-index: 1000;
-	margin-bottom: 80px;
-	margin-top: 40px;
+.header {
+    width: 100%;
+    height: 70px;
+    top: 40px;
+    left: 0;
+    z-index: 1000;
+    margin-bottom: 80px;
+    margin-top: 40px;
 }
 
-.header__inner{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	
+.header__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.header__logo{
-margin-right: 50px;
+.header__logo {
+    margin-right: 50px;
 }
 
+.nav {}
 
-.nav{
-
+.burger {
+    display: none;
 }
 
-.nav__link{
-	color: rgba(255, 255, 255, 0.5);
-	margin-right: 30px;
-	opacity: 0.7;
-	transition: opacity .2s linear;
-	
+.burger__close {
+    display: none;
 }
 
-.nav__link:last-child {
-	margin-right: 0;
+.nav__menu {
+    display: flex;
 }
 
-.nav__link:hover{
-	opacity: 1;
+.nav__menu_link {
+    margin-right: 30px;
+}
+
+.nav__link {
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 30px;
+    opacity: 0.7;
+    transition: opacity .2s linear;
+}
+
+.nav__menu_link:last-child {
+    margin-right: 0;
+}
+
+.nav__link:hover {
+    opacity: 1;
 }
 
 
 /*INTRO*/
 
-
-.intro{
-	margin-bottom: 145px;
+.intro {
+    margin-bottom: 145px;
 }
 
-
-.intro__inner_date{
-margin-bottom: 40px;
+.intro__inner_date {
+    margin-bottom: 40px;
 }
 
-.intro__inner_date span{
-	display: block;
-	color: rgba(255, 255, 255, 0.8);
-	font-size: 24px;
+.intro__inner_date span {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
 }
 
-.intro__inner_img{
-	margin-bottom: 40px;
-	
-	
-}
-.intro__inner_img img{
-	max-width: 100%;
-	
+.intro__inner_img {
+    margin-bottom: 40px;
 }
 
-
-.intro__inner_text p{
-	font-size: 16px;
-	line-height: 1.4;
-	color: rgba(255, 255, 255, 0.8);
+.intro__inner_img img {
+    width: 70%;
 }
 
-.intro__inner_text{
-	margin-bottom: 70px;
-	max-width: 423px;
+.intro__inner_text p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.intro__inner_text {
+    margin-bottom: 70px;
+    max-width: 423px;
 }
 
 
 /*BUTTON*/
 
-.btn-inner{
-	display: flex;
-	align-items: center;
-	margin-bottom: 100px;
-}
-.btn{
-	display: inline-block;
-	vertical-align: top;
-	padding: 15px 30px;
-	border-radius: 5px;
-	background-color: #fff;
-	
+.btn-inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
-.btn--white:hover{
-	transition: background-color .3s linear;
-	background-color: #a12234;
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #fff;
 }
 
-.btn-vector img{
-	padding-right: 10px;
+.btn--white:hover {
+    transition: background-color .3s linear;
+    background-color: #a12234;
 }
 
-.btn-text{
-	color: #8d0019;
+.btn-vector img {
+    padding-right: 10px;
 }
 
-
-
-
-.btn-ticket{
-	display: flex;
-	align-items: center;
-	margin-left: 55px;
-	
+.btn-text {
+    color: #8d0019;
 }
 
-
-.btn-ticket_link{
-	color: #ffffff;
-	padding-left: 10px;
-	font-size: 15px;
-	
+.btn-ticket {
+    display: flex;
+    align-items: center;
+    margin-left: 55px;
 }
 
+.btn-ticket_link {
+    color: #ffffff;
+    padding-left: 10px;
+    font-size: 15px;
+}
 
+@media(max-width: 768px) {
+    .red {
+        background: url(../img/background.jpg) no-repeat center top /100%, #14131A;
+    }
+    .picture__venom {
+        top: 15%;
+    }
+}
 
-
+@media(max-width: 578px) {
+    .header {
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+    .nav {
+        margin-left: auto;
+    }
+    .nav__menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 90;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.3s;
+    }
+    .nav__link {
+        color: #14131A;
+        margin-right: 0;
+        font-size: 30px;
+    }
+    .nav__menu_link {
+        margin-right: 0;
+        margin-bottom: 3%;
+    }
+    .burger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #14131A;
+    }
+    .burger__close {
+        position: fixed;
+        right: 15px;
+        top: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 91;
+        background-color: #fff;
+        transform: translateX(300%);
+        transition: transform 0.3s;
+        transition-delay: 0.2s;
+        opacity: 0;
+    }
+    .is-active {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    .btn-inner {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .btn-ticket {
+        margin-left: 0;
+        margin: 20px 0;
+    }
+    .intro__inner {
+        text-align: center;
+    }
+    .intro__inner_date span {
+        font-size: 18px;
+    }
+    .intro__inner_text p {
+        font-size: 16px;
+    }
+    .intro__inner_date {
+        margin-bottom: 15px;
+    }
+    .intro__inner_img {
+        margin-bottom: 20px;
+    }
+    .intro__inner_text {
+        margin-bottom: 35px;
+    }
+    .picture__venom {
+        width: 40%;
+    }
+}

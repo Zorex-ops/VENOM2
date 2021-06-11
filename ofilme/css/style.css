@@ -1,273 +1,373 @@
-/*обнуление значений размеров всех тегов*/
-
-* {
-    padding: 0;
-    border: 0;
-    margin: 0;
-}
-
-
-/*замена подсчета ширины блока*/
-
-*,
-*:before,
-*:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-
-/*удаление линии обводки у некоторых юраузеров*/
-
-:focus,
-:active {
-    outline: none;
-}
-
-a:focus,
-a:active {
-    overflow: none;
-}
-
-
-/*делаем html5 теги блочными*/
-
-nav,
-footer,
-header,
-aside {
-    display: block;
-}
-
-
-/*уравнивающие параметрышрифтов и элементов тегов html body для разных браузеров*/
-
-htl,
-body {
-    height: 100%;
-    width: 100%;
-    font-size: 100%;
-    line-height: 1;
-    font-size: 14px;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-
-/*установка наследования шрифта для тегов form*/
-
-input,
-button,
-textarea {
-    font-family: inherit;
-}
-
-
-/*изменения для разных браузеров тегов*/
-
-input::-ms-clear {
-    display: none;
-}
-
-button {
-    cursor: pointer;
-}
-
-button::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-}
-
-a,
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-ul,
-li {
-    list-style: none;
-}
-
-img {
-    vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-size: inherit;
-    font-weight: 400;
-}
-
-
-/*подключаем шрифты*/
-
-@import url('');
-
-/*подключаем шрифты*/
-
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-}
-
-.red {
-    background: url(../img/background.jpg) no-repeat center center /100%, #14131A;
-}
-
-.picture__venom {
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-width: 100%;
-    height: auto;
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    position: relative;
-}
-
-
-/*HEADER*/
-
-.header {
-    width: 100%;
-    height: 70px;
-    top: 40px;
-    left: 0;
-    z-index: 1000;
-    margin-bottom: 80px;
-    margin-top: 40px;
-}
-
-.header__inner {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.header__logo {
-    margin-right: 50px;
-}
-
-.nav {}
-
-.nav__link {
-    color: rgba(255, 255, 255, 0.5);
-    margin-right: 30px;
-    opacity: 0.7;
-    transition: opacity .2s linear;
-}
-
-.nav__link:last-child {
-    margin-right: 0;
-}
-
-.nav__link:hover {
-    opacity: 1;
-}
-
-
-/*ABOUT*/
-
-.about {
-    margin-bottom: 50px;
-}
-
-.about__fl {
-    display: flex;
-}
-
-.col {
-    flex-basis: 50%;
-}
-
-.about__title {
-    font-size: 36px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 20px;
-}
-
-.about__text {
-    font-size: 16px;
-    line-height: 140%;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 30px;
-    max-width: 420px;
-}
-
-.about__subtitle {
-    font-size: 16px;
-    line-height: 140%;
-    color: rgba(255, 255, 255, 0.8);
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-
-.list {
-    margin-bottom: 30px;
-}
-
-.column-2 {
-    column-count: 2;
-    column-gap: 20px;
-    max-width: 320px;
-}
-
-.list__actor {
-    font-size: 16px;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.about__promo {
-    width: 356px;
-    height: 205px;
-    background: url(../img/trailer.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3%;
-}
-
-.about__poster {
-    border-radius: 3%;
-}
-
-.about__promo_play {
-    border-radius: 50%;
-}
-
-.poster__wrapper {
-    display: flex;
-    align-items: start;
-}
-
-.poster__wrapper_info {
-    margin-left: 30px;
-}
-
-.poster__wrapper_info .about__subtitle {
-    margin-bottom: 5px;
-}
-
-.poster__wrapper_info .list {
-    margin-bottom: 20px;
-}
+        /*обнуление значений размеров всех тегов*/
+        
+        * {
+            padding: 0;
+            border: 0;
+            margin: 0;
+        }
+        /*замена подсчета ширины блока*/
+        
+        *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        /*удаление линии обводки у некоторых юраузеров*/
+        
+         :focus,
+         :active {
+            outline: none;
+        }
+        
+        a:focus,
+        a:active {
+            overflow: none;
+        }
+        /*делаем html5 теги блочными*/
+        
+        nav,
+        footer,
+        header,
+        aside {
+            display: block;
+        }
+        /*уравнивающие параметрышрифтов и элементов тегов html body для разных браузеров*/
+        
+        htl,
+        body {
+            height: 100%;
+            width: 100%;
+            font-size: 100%;
+            line-height: 1;
+            font-size: 14px;
+            -ms-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        /*установка наследования шрифта для тегов form*/
+        
+        input,
+        button,
+        textarea {
+            font-family: inherit;
+        }
+        /*изменения для разных браузеров тегов*/
+        
+        input::-ms-clear {
+            display: none;
+        }
+        
+        button {
+            cursor: pointer;
+        }
+        
+        button::-moz-focus-inner {
+            padding: 0;
+            border: 0;
+        }
+        
+        a,
+        a:visited {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        ul,
+        li {
+            list-style: none;
+        }
+        
+        img {
+            vertical-align: top;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: 400;
+        }
+        /*подключаем шрифты*/
+        
+        @import url('');
+        /*подключаем шрифты*/
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        .red {
+            background: url(../img/background.jpg) no-repeat center center /100%, #14131A;
+        }
+        
+        .picture__venom {
+            position: absolute;
+            top: 0;
+            right: 0;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            position: relative;
+        }
+        /*HEADER*/
+        
+        .header {
+            width: 100%;
+            height: 70px;
+            top: 40px;
+            left: 0;
+            z-index: 1000;
+            margin-bottom: 80px;
+            margin-top: 40px;
+        }
+        
+        .header__inner {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .header__logo {
+            margin-right: 50px;
+        }
+        
+        .nav {}
+        
+        .burger {
+            display: none;
+        }
+        
+        .burger__close {
+            display: none;
+        }
+        
+        .nav__menu {
+            display: flex;
+        }
+        
+        .nav__menu_link {
+            margin-right: 30px;
+        }
+        
+        .nav__link {
+            color: rgba(255, 255, 255, 0.5);
+            margin-right: 30px;
+            opacity: 0.7;
+            transition: opacity .2s linear;
+        }
+        
+        .nav__menu_link:last-child {
+            margin-right: 0;
+        }
+        
+        .nav__link:hover {
+            opacity: 1;
+        }
+        /*ABOUT*/
+        
+        .about {
+            margin-bottom: 50px;
+        }
+        
+        .about__fl {
+            display: flex;
+        }
+        
+        .col {
+            flex-basis: 50%;
+        }
+        
+        .about__title {
+            font-size: 36px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+        }
+        
+        .about__text {
+            font-size: 16px;
+            line-height: 140%;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+            max-width: 420px;
+        }
+        
+        .about__subtitle {
+            font-size: 16px;
+            line-height: 140%;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .list {
+            margin-bottom: 30px;
+        }
+        
+        .column-2 {
+            column-count: 2;
+            column-gap: 20px;
+            max-width: 320px;
+        }
+        
+        .list__actor {
+            font-size: 16px;
+            line-height: 1.5;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .about__promo {
+            width: 356px;
+            height: 205px;
+            background: url(../img/trailer.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3%;
+        }
+        
+        .about__poster {
+            border-radius: 3%;
+        }
+        
+        .about__promo_play {
+            border-radius: 50%;
+        }
+        
+        .poster__wrapper {
+            display: flex;
+            align-items: start;
+        }
+        
+        .poster__wrapper_info {
+            margin-left: 30px;
+        }
+        
+        .poster__wrapper_info .about__subtitle {
+            margin-bottom: 5px;
+        }
+        
+        .poster__wrapper_info .list {
+            margin-bottom: 20px;
+        }
+        
+        @media(max-width: 960px) {
+            .about__fl {
+                flex-direction: column;
+            }
+            .col {
+                margin-bottom: 5%;
+            }
+        }
+        
+        @media(max-width: 768px) {
+            .red {
+                background: url(../img/background.jpg) no-repeat center top /100%, #14131A;
+            }
+            .poster__wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        @media(max-width: 590px) {
+            .header {
+                margin-bottom: 40px;
+                margin-top: 10px;
+            }
+            .nav {
+                margin-left: auto;
+            }
+            .nav__menu {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+                z-index: 90;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                transform: translateX(100%);
+                transition: transform 0.3s;
+            }
+            .nav__link {
+                color: #14131A;
+                margin-right: 0;
+                font-size: 30px;
+            }
+            .nav__menu_link {
+                margin-right: 0;
+                margin-bottom: 3%;
+            }
+            .burger {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #14131A;
+            }
+            .burger__close {
+                position: fixed;
+                right: 15px;
+                top: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 91;
+                background-color: #fff;
+                transform: translateX(300%);
+                transition: transform 0.3s;
+                transition-delay: 0.2s;
+                opacity: 0;
+            }
+            .is-active {
+                transform: translateX(0%);
+                opacity: 1;
+            }
+            .column-2 {
+                column-count: auto;
+            }
+            .about__text {
+                margin-bottom: 4%;
+            }
+            .list {
+                margin-bottom: 4%;
+            }
+            .about__promo {
+                max-width: 356px;
+                width: 100%;
+            }
+            .about__poster {
+                max-width: 356px;
+                width: 100%;
+                margin-bottom: 4%;
+            }
+            .poster__wrapper_info {
+                text-align-last: left;
+                margin-left: 0;
+            }
+        }
